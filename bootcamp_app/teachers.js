@@ -4,6 +4,10 @@
     // Use the query from "BootcampX Queries 4" to get all teachers that made an assistance request during a cohort.
     // Accept the cohort name as input from the user.
 
+// const cohortsName = process.argv[2];
+// const limit process.argv[3] || 5;
+// const values [%${cohortName}, limit]
+
 pool.query(`
 SELECT DISTINCT teachers.name as teacher, cohorts.name as cohort
 FROM teachers
